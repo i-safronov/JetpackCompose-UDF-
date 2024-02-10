@@ -16,7 +16,7 @@ abstract class UDFStateWrapper<S: UDF.State>(
         _state.value = newState
     }
 
-    abstract fun updateState(action: StateAction): S
+    protected abstract fun updateState(action: StateAction): S
 
     sealed class StateAction
 
